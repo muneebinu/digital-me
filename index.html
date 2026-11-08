@@ -3,50 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muneeb Ur Rehman, web and machine learning developer</title>
-<meta name="description" content="Portfolio of Muneeb Ur Rehman: web development and machine learning projects, and Fluentio Academia, a German and English language academy he founded.">
+<title>Muneeb Ur Rehman, web and machine learning developer and German teacher</title>
+<meta name="description" content="Muneeb Ur Rehman builds websites and machine learning applications, teaches German, and founded Fluentio Academia. Projects, live demo and contact.">
 <link rel="canonical" href="https://muneebinu.github.io/digital-me/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Muneeb Ur Rehman, web and machine learning developer">
-<meta property="og:description" content="Web development and machine learning projects, and the founder of Fluentio Academia.">
+<meta property="og:title" content="Muneeb Ur Rehman, developer and German teacher">
+<meta property="og:description" content="Websites, machine learning projects and Fluentio Academia.">
 <meta property="og:url" content="https://muneebinu.github.io/digital-me/">
 <meta property="og:image" content="https://muneebinu.github.io/digital-me/assets/disese.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/bricolage-grotesque-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/public-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/main.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muneeb Ur Rehman","url":"https://muneebinu.github.io/digital-me/","email":"mailto:malakmuneeb9@gmail.com","jobTitle":"Web developer","knowsAbout":["Web development","Machine learning","German language teaching"],"alumniOf":{"@type":"EducationalOrganization","name":"[PLACEHOLDER: university]"},"founder":{"@type":"Organization","name":"Fluentio Academia","url":"https://muneebinu.github.io/Fluentio-Academia/"},"sameAs":["https://github.com/muneebinu","https://www.linkedin.com/in/muneeb-ur-rehman-043624352/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muneeb Ur Rehman","url":"https://muneebinu.github.io/digital-me/","email":"mailto:malakmuneeb9@gmail.com","jobTitle":"Web developer","knowsAbout":["Web development","Machine learning","German language teaching"],"founder":{"@type":"Organization","name":"Fluentio Academia","url":"https://muneebinu.github.io/Fluentio-Academia/"},"sameAs":["https://github.com/muneebinu","https://www.linkedin.com/in/muneeb-ur-rehman-043624352/"]}</script>
 <script type="module" src="js/main.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header"><a class="brand" href="#intro">Muneeb Ur Rehman</a>
-<nav aria-label="Main"><a href="#work">Work</a><a href="#experiments">Experiments</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header>
+<header class="bar"><a class="brand" href="#top">Muneeb Ur Rehman</a>
+<nav aria-label="Main"><a href="#fluentio">Fluentio</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#lab">Lab</a><a class="cta" href="#contact">Contact</a></nav></header>
 <main id="main">
-<section id="intro" class="intro grid" aria-labelledby="h-intro">
-<h1 id="h-intro">Muneeb Ur Rehman</h1>
-<p class="statement">I build websites and machine learning applications in Python and JavaScript. I also teach German and founded Fluentio Academia.</p>
+
+<section class="hero" id="top">
+  <div class="hero-text">
+    <h1>Muneeb<br>Ur Rehman</h1>
+    <p class="lead">I build websites and machine learning applications, teach German, and founded Fluentio Academia.</p>
+    <p class="hint">Each card is one of my jobs, in German. Tap or hover to translate.</p>
+  </div>
+  <ul class="cards">
+    <li><button class="card" style="--d:0;--t:-2.5deg" aria-pressed="false"><span class="front"><b>Entwickler</b><small>de</small></span><span class="back"><b>Developer</b><small>HTML, CSS and JavaScript sites, Flask apps</small></span></button></li>
+    <li><button class="card" style="--d:1;--t:2deg" aria-pressed="false"><span class="front"><b>Maschinelles Lernen</b><small>de</small></span><span class="back"><b>Machine learning</b><small>XGBoost, CNNs, OpenCV</small></span></button></li>
+    <li><button class="card" style="--d:2;--t:1.5deg" aria-pressed="false"><span class="front"><b>Lehrer</b><small>de</small></span><span class="back"><b>Teacher</b><small>German at A2 level</small></span></button></li>
+    <li><button class="card" style="--d:3;--t:-2deg" aria-pressed="false"><span class="front"><b>Gründer</b><small>de</small></span><span class="back"><b>Founder</b><small>Fluentio Academia</small></span></button></li>
+  </ul>
 </section>
-<section id="work" class="work" aria-labelledby="h-work"><h2 id="h-work" class="grid-h">Work</h2>
-<article class="entry" id="fluentio-academia"><dl class="meta"><div><dt class="label">Year</dt><dd>[PLACEHOLDER: year]</dd></div><div><dt class="label">Role</dt><dd>Founder and developer</dd></div><div><dt class="label">Stack</dt><dd class="mono">HTML5, CSS3, vanilla JavaScript, GitHub Pages</dd></div></dl><div class="body"><h3>Fluentio Academia</h3><p>Website for the language academy I founded. It offers German (A1, A2) and English courses. I wrote it without a framework: a CSS variable design system, a sticky header with a mobile navigation drawer, scroll-reveal sections, and course pages with curriculum highlights and pricing comparison tables. It also includes enrollment integration and student certificate functionality. [PLACEHOLDER: how enrollment and certificates work]</p><ul class="links"><li><a href="https://muneebinu.github.io/Fluentio-Academia/" rel="noopener">Live site</a></li><li><a href="https://github.com/muneebinu/Fluentio-Academia" rel="noopener">Repository</a></li></ul></div><figure class="fig ph"><p class="label">[PLACEHOLDER: screenshot, assets/fluentio-academia.webp]</p></figure></article><article class="entry" id="healthpredictorxgb"><dl class="meta"><div><dt class="label">Year</dt><dd>[PLACEHOLDER: year]</dd></div><div><dt class="label">Role</dt><dd>Developer</dd></div><div><dt class="label">Stack</dt><dd class="mono">Python, XGBoost, Flask, Pandas, NumPy, scikit-learn</dd></div></dl><div class="body"><h3>HealthPredictorXGB</h3><p>A disease prediction application. The user enters symptoms and an XGBoost classifier returns a predicted condition through a Flask interface. Work included feature engineering and separate training and testing datasets. [PLACEHOLDER: dataset source and evaluation results]</p><ul class="links"><li><a href="https://github.com/muneebinu/HealthPredictorXGB" rel="noopener">Repository</a></li></ul></div><figure class="fig"><picture><source srcset="assets/disese.webp" type="image/webp"><img src="assets/disese.png" alt="Disease prediction app showing symptom inputs and a predicted result" width="1600" height="1000" loading="lazy"></picture></figure></article><article class="entry" id="pneumonia-detection"><dl class="meta"><div><dt class="label">Year</dt><dd>[PLACEHOLDER: year]</dd></div><div><dt class="label">Role</dt><dd>Developer</dd></div><div><dt class="label">Stack</dt><dd class="mono">Python, deep learning, CNN [PLACEHOLDER: framework]</dd></div></dl><div class="body"><h3>Pneumonia detection</h3><p>A convolutional neural network that classifies chest X-ray images as pneumonia or normal. [PLACEHOLDER: dataset, architecture and evaluation results]</p><ul class="links"><li><a href="https://github.com/muneebinu/-Pnemunia-Detection-" rel="noopener">Repository</a></li></ul></div><figure class="fig"><picture><source srcset="assets/Pnemunia.webp" type="image/webp"><img src="assets/Pnemunia.png" alt="Pneumonia detection project interface" width="1600" height="1000" loading="lazy"></picture></figure></article><article class="entry" id="face-detection-attendance"><dl class="meta"><div><dt class="label">Year</dt><dd>[PLACEHOLDER: year]</dd></div><div><dt class="label">Role</dt><dd>Developer</dd></div><div><dt class="label">Stack</dt><dd class="mono">Python, OpenCV, Flask</dd></div></dl><div class="body"><h3>Face detection attendance</h3><p>Attendance system that detects faces from a camera feed and records attendance, with a Flask interface. [PLACEHOLDER: how faces are matched to students]</p><ul class="links"><li><a href="https://github.com/muneebinu/Face-detection-model" rel="noopener">Repository</a></li></ul></div><figure class="fig"><picture><source srcset="assets/face.webp" type="image/webp"><img src="assets/face.png" alt="Face detection attendance application interface" width="1600" height="1000" loading="lazy"></picture></figure></article><article class="entry" id="face-recognition-module"><dl class="meta"><div><dt class="label">Year</dt><dd>[PLACEHOLDER: year]</dd></div><div><dt class="label">Role</dt><dd>Developer</dd></div><div><dt class="label">Stack</dt><dd class="mono">Python, OpenCV</dd></div></dl><div class="body"><h3>Face recognition module</h3><p>Command-line face recognition that labels each face as welcome or unknown. It has no GUI so other backends can call it.</p><ul class="links"><li><a href="https://github.com/muneebinu/Face-Detection-2" rel="noopener">Repository</a></li></ul></div><figure class="fig ph"><p class="label">[PLACEHOLDER: screenshot, assets/face-recognition-module.webp]</p></figure></article><article class="entry" id="portfolio"><dl class="meta"><div><dt class="label">Year</dt><dd>[PLACEHOLDER: year]</dd></div><div><dt class="label">Role</dt><dd>Developer</dd></div><div><dt class="label">Stack</dt><dd class="mono">HTML, CSS, JavaScript (ES modules)</dd></div></dl><div class="body"><h3>This portfolio</h3><p>The site you are reading. Plain HTML, CSS and JavaScript with self-hosted fonts and no frameworks, served from GitHub Pages. The k-means demo below is written by hand on Canvas 2D.</p><ul class="links"><li><a href="https://github.com/muneebinu/digital-me" rel="noopener">Repository</a></li></ul></div><figure class="fig ph"><p class="label">[PLACEHOLDER: screenshot, assets/portfolio.webp]</p></figure></article>
+
+<section class="fluentio" id="fluentio" aria-labelledby="h-flu">
+  <div class="flu-copy">
+    <h2 id="h-flu">Fluentio Academia</h2>
+    <p class="big">The language academy I founded, taught in and built the website for.</p>
+    <p>Fluentio offers German (A1, A2) and English courses online. I wrote the site without a framework: a CSS variable design system, a sticky header with a mobile drawer, scroll-reveal sections, and course pages with curriculum highlights and pricing comparison tables. It also has enrollment integration and student certificate functionality.</p>
+    <p class="links"><a class="btn" href="https://muneebinu.github.io/Fluentio-Academia/" rel="noopener">Open the live site</a><a href="https://github.com/muneebinu/Fluentio-Academia" rel="noopener">Source on GitHub</a></p>
+    <p class="tech">HTML5, CSS3, vanilla JavaScript, GitHub Pages</p>
+  </div>
+  <div class="browser"><div class="chrome"><i></i><i></i><i></i><span>muneebinu.github.io/Fluentio-Academia</span></div><iframe src="https://muneebinu.github.io/Fluentio-Academia/" title="Live preview of the Fluentio Academia website" loading="lazy" tabindex="-1"></iframe></div>
+  <div class="german">
+    <h3>German at Fluentio and Jan Law</h3>
+    <p>I also help develop the Jan Law German Language Center in Swat, which teaches A1 to B1.</p>
+    <ol class="steps" role="tablist" aria-label="German levels">
+      <li><button role="tab" aria-selected="true" data-lv="a1">A1</button></li><li><button role="tab" aria-selected="false" data-lv="a2">A2</button></li><li><button role="tab" aria-selected="false" data-lv="b1">B1</button></li>
+    </ol>
+    <p id="lv" aria-live="polite">A1: first conversations, everyday phrases and the basics of German grammar.</p>
+  </div>
 </section>
-<section id="experiments" class="experiments grid" aria-labelledby="h-exp"><h2 id="h-exp" class="grid-h">Experiments</h2>
-<div class="exp-copy"><h3>K-means clustering</h3><p>Click the canvas to add points, then step through the algorithm. Each step assigns every point to its nearest centroid, then moves each centroid to the mean of its points. The run stops when no assignment changes. Written on Canvas 2D with no libraries; the loop pauses when the canvas is off-screen.</p>
-<p class="label">[PLACEHOLDER: shaders, renders and other graphics work]</p></div>
-<div class="exp-demo"><canvas id="kmeans" width="720" height="440" role="img" aria-label="K-means clustering demo. Points are grouped by colour around centroids.">Canvas is not supported in this browser. K-means repeatedly assigns points to the nearest centroid and recomputes each centroid as the mean of its points.</canvas>
-<div class="controls"><label class="label" for="k">Clusters</label><select id="k"><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
-<button type="button" id="step">Step</button><button type="button" id="run">Run</button><button type="button" id="more">Add 20 points</button><button type="button" id="reset">Reset</button></div>
-<p id="state" class="mono" role="status" aria-live="polite"></p></div>
+
+<section class="work" id="work" aria-labelledby="h-work"><h2 id="h-work">Projects</h2>
+<article class="proj" style="--c:#7BE0B8"><div class="txt"><h3>HealthPredictorXGB</h3><p>A disease prediction app. You enter symptoms and an XGBoost classifier returns a predicted condition through a Flask interface. The work included feature engineering and separate training and testing datasets.</p><p class="tech">Python, XGBoost, Flask, Pandas, NumPy, scikit-learn</p><p class="links"><a class="btn" href="https://github.com/muneebinu/HealthPredictorXGB" rel="noopener">View repository</a></p></div><figure class="fig" data-t="HealthPredictorXGB"><img src="assets/disese.png" alt="Disease prediction app with symptom inputs and a predicted result" width="1600" height="1000" loading="lazy"></figure></article>
+<article class="proj flip" style="--c:#8CC8FF"><div class="txt"><h3>Pneumonia detection</h3><p>A convolutional neural network that classifies chest X-ray images as pneumonia or normal.</p><p class="tech">Python, deep learning, CNN</p><p class="links"><a class="btn" href="https://github.com/muneebinu/-Pnemunia-Detection-" rel="noopener">View repository</a></p></div><figure class="fig" data-t="Pneumonia detection"><img src="assets/Pnemunia.png" alt="Pneumonia detection project interface" width="1600" height="1000" loading="lazy"></figure></article>
+<article class="proj" style="--c:#FF9B8A"><div class="txt"><h3>Face detection attendance</h3><p>Detects faces from a camera feed and records attendance, with a Flask interface. A companion module labels faces as welcome or unknown with no GUI, so other backends can call it.</p><p class="tech">Python, OpenCV, Flask</p><p class="links"><a class="btn" href="https://github.com/muneebinu/Face-detection-model" rel="noopener">Attendance app</a><a href="https://github.com/muneebinu/Face-Detection-2" rel="noopener">Recognition module</a></p></div><figure class="fig" data-t="Face detection"><img src="assets/face.png" alt="Face detection attendance application interface" width="1600" height="1000" loading="lazy"></figure></article>
+<article class="proj flip" style="--c:#F1D35B"><div class="txt"><h3>This portfolio</h3><p>Plain HTML, CSS and JavaScript with self-hosted fonts, served from GitHub Pages.</p><p class="tech">HTML, CSS, JavaScript</p><p class="links"><a class="btn" href="https://github.com/muneebinu/digital-me" rel="noopener">View repository</a></p></div><figure class="fig" data-t="Portfolio"><img src="assets/webs.png" alt="Earlier version of the portfolio website" width="1600" height="1000" loading="lazy"></figure></article>
 </section>
-<section id="about" class="about grid" aria-labelledby="h-about"><h2 id="h-about" class="grid-h">About</h2>
-<div class="about-body"><p>I hold a BS in Computer Science. I develop websites and machine learning projects, and I teach German at A2 level. I founded Fluentio Academia, an online academy for German (A1, A2) and English, and I am involved in developing the Jan Law German Language Center in Swat, which teaches German from A1 to B1.</p>
-<dl class="facts"><div><dt class="label">Education</dt><dd>BS Computer Science, [PLACEHOLDER: university and years]</dd></div><div><dt class="label">Languages</dt><dd>Urdu (native), English, German</dd></div><div><dt class="label">Looking for</dt><dd>[PLACEHOLDER: roles you want listed]</dd></div></dl></div></section>
-<section id="contact" class="contact grid" aria-labelledby="h-contact"><h2 id="h-contact" class="grid-h">Contact</h2>
-<div class="contact-body"><p><a class="mail" href="mailto:malakmuneeb9@gmail.com">malakmuneeb9@gmail.com</a></p>
-<ul class="links"><li><a href="https://github.com/muneebinu" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/muneeb-ur-rehman-043624352/" rel="noopener">LinkedIn</a></li><li><a href="https://wa.me/923189150911" rel="noopener">WhatsApp</a></li></ul></div></section>
+
+<section class="skills" id="skills" aria-labelledby="h-sk"><h2 id="h-sk">Skills</h2>
+<dl class="gloss"><div><dt>Web</dt><dd>HTML, CSS, JavaScript, Flask, responsive layout, GitHub Pages</dd></div><div><dt>Machine learning</dt><dd>Python, XGBoost, scikit-learn, Pandas, NumPy, CNNs, OpenCV</dd></div><div><dt>Teaching</dt><dd>German (A1 to B1), English, course content and curriculum</dd></div><div><dt>Education</dt><dd>BS Computer Science</dd></div><div><dt>Languages</dt><dd>Urdu (native), English, German</dd></div></dl></section>
+
+<section class="lab" id="lab" aria-labelledby="h-lab"><div class="lab-copy"><h2 id="h-lab">K-means in the browser</h2><p>Click the canvas to add points, then step through the algorithm. Each step assigns every point to its nearest centroid, then moves each centroid to the mean of its points. It stops when no assignment changes. Written by hand on Canvas 2D.</p></div>
+<div class="lab-demo"><canvas id="kmeans" width="720" height="440" role="img" aria-label="K-means clustering demo with coloured points around square centroids">Canvas is not supported in this browser.</canvas>
+<div class="controls"><label for="k">Clusters</label><select id="k"><option>2</option><option selected>3</option><option>4</option><option>5</option></select><button type="button" id="step">Step</button><button type="button" id="run">Run</button><button type="button" id="more">Add 20 points</button><button type="button" id="reset">Reset</button></div>
+<p id="state" role="status" aria-live="polite"></p></div></section>
+
+<section class="contact" id="contact" aria-labelledby="h-c"><h2 id="h-c">Contact</h2>
+<a class="mail" href="mailto:malakmuneeb9@gmail.com">malakmuneeb9@gmail.com</a>
+<ul class="links"><li><a href="https://github.com/muneebinu" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/muneeb-ur-rehman-043624352/" rel="noopener">LinkedIn</a></li><li><a href="https://wa.me/923189150911" rel="noopener">WhatsApp</a></li></ul></section>
 </main>
-<footer class="site-footer"><p>Muneeb Ur Rehman, 2026, <a href="mailto:malakmuneeb9@gmail.com">malakmuneeb9@gmail.com</a></p></footer>
+<footer class="foot"><p>Muneeb Ur Rehman, 2026, <a href="mailto:malakmuneeb9@gmail.com">malakmuneeb9@gmail.com</a></p></footer>
 </body>
 </html>
