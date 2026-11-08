@@ -23,14 +23,14 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar"><a class="brand" href="#top">Muneeb Ur Rehman</a>
-<nav aria-label="Main"><a href="#fluentio">Fluentio</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#lab">Lab</a><a class="cta" href="#contact">Contact</a></nav></header>
+<nav aria-label="Main"><a href="#about">About</a><a href="#fluentio">Fluentio</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#lab">Lab</a><a class="cta" href="#contact">Contact</a></nav></header>
 <main id="main">
 
 <section class="hero" id="top">
   <div class="hero-text">
     <h1>Muneeb<br>Ur Rehman</h1>
     <p class="lead">I build websites and machine learning applications, teach German, and founded Fluentio Academia.</p>
-    <p class="hint">Each card is one of my jobs, in German. Tap or hover to translate.</p>
+    <p class="hint">A little about what I do. Tap a card to turn it over.</p>
   </div>
   <ul class="cards">
     <li><button class="card" style="--d:0;--t:-2.5deg" aria-pressed="false"><span class="front"><b>Entwickler</b><small>de</small></span><span class="back"><b>Developer</b><small>HTML, CSS and JavaScript sites, Flask apps</small></span></button></li>
@@ -59,22 +59,22 @@
   </div>
 </section>
 
-<section class="work" id="work" aria-labelledby="h-work"><h2 id="h-work">Projects</h2>
+<section class="work" id="work" aria-labelledby="h-work"><p class="section-kicker">02 / THINGS I’VE BUILT</p><h2 id="h-work">Selected<br>projects<span class="hero-period">.</span></h2><p class="work-intro">A selection of experiments and applications across web development and machine learning. Each one started with a problem to explore.</p>
 <article class="proj" style="--c:#7BE0B8"><div class="txt"><h3>HealthPredictorXGB</h3><p>A disease prediction app. You enter symptoms and an XGBoost classifier returns a predicted condition through a Flask interface. The work included feature engineering and separate training and testing datasets.</p><p class="tech">Python, XGBoost, Flask, Pandas, NumPy, scikit-learn</p><p class="links"><a class="btn" href="https://github.com/muneebinu/HealthPredictorXGB" rel="noopener">View repository</a></p></div><figure class="fig" data-t="HealthPredictorXGB"><img src="assets/disese.png" alt="Disease prediction app with symptom inputs and a predicted result" width="1600" height="1000" loading="lazy"></figure></article>
 <article class="proj flip" style="--c:#8CC8FF"><div class="txt"><h3>Pneumonia detection</h3><p>A convolutional neural network that classifies chest X-ray images as pneumonia or normal.</p><p class="tech">Python, deep learning, CNN</p><p class="links"><a class="btn" href="https://github.com/muneebinu/-Pnemunia-Detection-" rel="noopener">View repository</a></p></div><figure class="fig" data-t="Pneumonia detection"><img src="assets/Pnemunia.png" alt="Pneumonia detection project interface" width="1600" height="1000" loading="lazy"></figure></article>
 <article class="proj" style="--c:#FF9B8A"><div class="txt"><h3>Face detection attendance</h3><p>Detects faces from a camera feed and records attendance, with a Flask interface. A companion module labels faces as welcome or unknown with no GUI, so other backends can call it.</p><p class="tech">Python, OpenCV, Flask</p><p class="links"><a class="btn" href="https://github.com/muneebinu/Face-detection-model" rel="noopener">Attendance app</a><a href="https://github.com/muneebinu/Face-Detection-2" rel="noopener">Recognition module</a></p></div><figure class="fig" data-t="Face detection"><img src="assets/face.png" alt="Face detection attendance application interface" width="1600" height="1000" loading="lazy"></figure></article>
 <article class="proj flip" style="--c:#F1D35B"><div class="txt"><h3>This portfolio</h3><p>Plain HTML, CSS and JavaScript with self-hosted fonts, served from GitHub Pages.</p><p class="tech">HTML, CSS, JavaScript</p><p class="links"><a class="btn" href="https://github.com/muneebinu/digital-me" rel="noopener">View repository</a></p></div><figure class="fig" data-t="Portfolio"><img src="assets/webs.png" alt="Earlier version of the portfolio website" width="1600" height="1000" loading="lazy"></figure></article>
 </section>
 
-<section class="skills" id="skills" aria-labelledby="h-sk"><h2 id="h-sk">Skills</h2>
+<section class="skills" id="skills" aria-labelledby="h-sk"><p class="section-kicker">03 / WHAT I BRING</p><h2 id="h-sk">Tools &amp; capabilities<span class="hero-period">.</span></h2>
 <dl class="gloss"><div><dt>Web</dt><dd>HTML, CSS, JavaScript, Flask, responsive layout, GitHub Pages</dd></div><div><dt>Machine learning</dt><dd>Python, XGBoost, scikit-learn, Pandas, NumPy, CNNs, OpenCV</dd></div><div><dt>Teaching</dt><dd>German (A1 to B1), English, course content and curriculum</dd></div><div><dt>Education</dt><dd>BS Computer Science</dd></div><div><dt>Languages</dt><dd>Urdu (native), English, German</dd></div></dl></section>
 
-<section class="lab" id="lab" aria-labelledby="h-lab"><div class="lab-copy"><h2 id="h-lab">K-means in the browser</h2><p>Click the canvas to add points, then step through the algorithm. Each step assigns every point to its nearest centroid, then moves each centroid to the mean of its points. It stops when no assignment changes. Written by hand on Canvas 2D.</p></div>
+<section class="lab" id="lab" aria-labelledby="h-lab"><div class="lab-copy"><p class="section-kicker">04 / PLAYGROUND</p><h2 id="h-lab">A little machine learning, made visible<span class="hero-period">.</span></h2><p>Click the canvas to add points, then step through the algorithm. Each step assigns every point to its nearest centroid, then moves each centroid to the mean of its points. It stops when no assignment changes. Written by hand on Canvas 2D.</p></div>
 <div class="lab-demo"><canvas id="kmeans" width="720" height="440" role="img" aria-label="K-means clustering demo with coloured points around square centroids">Canvas is not supported in this browser.</canvas>
 <div class="controls"><label for="k">Clusters</label><select id="k"><option>2</option><option selected>3</option><option>4</option><option>5</option></select><button type="button" id="step">Step</button><button type="button" id="run">Run</button><button type="button" id="more">Add 20 points</button><button type="button" id="reset">Reset</button></div>
 <p id="state" role="status" aria-live="polite"></p></div></section>
 
-<section class="contact" id="contact" aria-labelledby="h-c"><h2 id="h-c">Contact</h2>
+<section class="contact" id="contact" aria-labelledby="h-c"><p class="section-kicker">05 / YOUR TURN</p><h2 id="h-c">Let’s make<br>something matter<span class="contact-period">.</span></h2><p class="contact-note">Have an opportunity, an idea or just want to connect? My inbox is open.</p>
 <a class="mail" href="mailto:malakmuneeb9@gmail.com">malakmuneeb9@gmail.com</a>
 <ul class="links"><li><a href="https://github.com/muneebinu" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/muneeb-ur-rehman-043624352/" rel="noopener">LinkedIn</a></li><li><a href="https://wa.me/923189150911" rel="noopener">WhatsApp</a></li></ul></section>
 </main>
