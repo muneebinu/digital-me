@@ -1,107 +1,47 @@
-# Muneeb Ur Rehman — Portfolio Website
+# Muneeb Ur Rehman — Personal Portfolio
 
-> Personal portfolio of **Muneeb Ur Rehman**, BS Computer Science student and AI & ML Developer based in Swat, Khyber Pakhtunkhwa, Pakistan.
+The personal portfolio of Muneeb Ur Rehman, a computer science graduate based in Swat, Pakistan.
 
-🔗 **Live Site:** [muneebinu.github.io/digital-me](https://muneebinu.github.io/digital-me)
-
----
+**Live site:** https://muneebinu.github.io/digital-me/
 
 ## About
 
-A clean, modern developer portfolio built with vanilla HTML, CSS, and JavaScript. Designed to showcase AI/ML projects, skills, and services — with a focus on helping Pakistani students with their Final Year Projects (FYPs).
+A custom, responsive portfolio built with semantic HTML, modern CSS and vanilla JavaScript. It brings together selected work across web development, applied machine learning, computer vision and education.
 
----
+## Featured projects
 
-## Sections
+| Project | Summary | Repository |
+|---|---|---|
+| HealthPredictorXGB | Symptom-based disease prediction prototype using XGBoost and Flask | [GitHub](https://github.com/muneebinu/HealthPredictorXGB) |
+| Pneumonia CNN Detector | MobileNet-based chest X-ray image classification with a Tkinter interface | [GitHub](https://github.com/muneebinu/Pneumonia-CNN-Detector) |
+| Face attendance system | Webcam-based student registration, recognition and CSV attendance | [GitHub](https://github.com/muneebinu/Face-detection-model) |
+| Face recognition module | Standalone real-time face recognition using OpenCV and face encodings | [GitHub](https://github.com/muneebinu/Face-Detection-2) |
+| Fluentio Academia | Language academy website and learning platform founded by Muneeb | [GitHub](https://github.com/muneebinu/Fluentio-Academia) · [Live](https://muneebinu.github.io/Fluentio-Academia/) |
+| Fluentio AI | AI-assisted German learning app for lessons, exam preparation, listening and speaking | [GitHub](https://github.com/muneebinu/Fluentio-Ai) |
+| Previous portfolio | Earlier personal website for development, machine learning and teaching work | [GitHub](https://github.com/muneebinu/muneebinu.github.io) · [Live](https://muneebinu.github.io/) |
 
-| Section | Description |
-|---|---|
-| **Home** | Intro with profile photo, typewriter effect, and stats |
-| **Skills** | Animated progress bars + tech tag cloud |
-| **Projects** | 6 project cards with images, tags, and GitHub/live links |
-| **Services** | FYP Assistance, Project Building, Prompt Engineering |
-| **Contact** | WhatsApp and GitHub contact cards |
+Forked community repositories are not presented as original projects.
 
----
+## Design & implementation
 
-## Projects Featured
+- Midnight navy palette with blue, violet, cyan and rose accents.
+- Self-hosted Hanken Grotesk and Fraunces fonts.
+- Existing project and portrait images in `assets/`; no external stock photography.
+- Responsive project grid with category filters.
+- Lightweight scroll reveals, animated type marquee and hover details.
+- Accessible mobile navigation, keyboard support and reduced-motion handling.
+- Custom branded `404.html` page.
+- No frontend framework or build step required.
 
-- 🫁 **Pneumonia Detection** — CNN model built with PyTinker to detect pneumonia from chest X-rays
-- 🏥 **Disease Prediction** — XGBoost + Flask GUI for symptom-based disease prediction
-- 👤 **Face Detection Attendance** — Automated attendance system using OpenCV + Flask
-- 🔍 **Face Recognition System** — Welcome/Unknown face recognition without GUI
-- 🌐 **Portfolio Website** — This site
-- 🎓 **Fluentio Academia** — Language learning platform for Spoken English & German A2
+## Run locally
 
----
-
-## Tech Stack
-
-- **HTML5** — Semantic markup
-- **CSS3** — Custom properties, Grid, Flexbox, animations
-- **JavaScript (ES6+)** — Intersection Observer, typewriter effect, theme toggle
-- **Fonts** — Syne, Space Grotesk, JetBrains Mono (Google Fonts)
-- **Icons** — Font Awesome 6
-
----
-
-## File Structure
-
-```
-digital-me/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # All styles + responsive design
-├── js/
-│   └── script.js       # Animations, theme toggle, scroll behavior
-├── assets/
-│   ├── muneeb.jpg      # Profile photo
-│   ├── Pnemunia.png    # Pneumonia Detection screenshot
-│   ├── disese.png      # Disease Prediction screenshot
-│   ├── face.png        # Face Detection screenshot
-│   └── webs.png        # Portfolio screenshot
-├── README.md           # This file
-└── CHANGELOG.md        # Full change history
-```
-
----
-
-## Features
-
-- ✅ Dark / Light mode toggle (preference saved to localStorage)
-- ✅ Custom animated cursor (desktop)
-- ✅ Typewriter effect cycling through 5 roles
-- ✅ Scroll-triggered fade-in animations (Intersection Observer)
-- ✅ Animated skill progress bars
-- ✅ Active nav link highlighting on scroll
-- ✅ Sticky navbar with frosted glass blur on scroll
-- ✅ Fully responsive — mobile, tablet, desktop
-- ✅ Horizontal scrollable nav on mobile (no hamburger menu)
-- ✅ Spinning profile ring animation
-
----
-
-## Running Locally
-
-No build tools needed. Just open the file:
-
-```bash
-git clone https://github.com/muneebinu/digital-me.git
-cd digital-me
-# Open index.html in your browser
-```
-
-Or use VS Code Live Server for hot reload.
-
----
+Clone the repository and open `index.html` in a browser. A local static server is recommended for the best experience.
 
 ## Contact
 
-| Platform | Link |
-|---|---|
-| WhatsApp | [+92 318 9150911](https://wa.me/+923189150911) |
-| GitHub | [github.com/muneebinu](https://github.com/muneebinu) |
+- Email: [malakmuneeb9@gmail.com](mailto:malakmuneeb9@gmail.com)
+- GitHub: [@muneebinu](https://github.com/muneebinu)
+- LinkedIn: [Muneeb Ur Rehman](https://www.linkedin.com/in/muneeb-ur-rehman-043624352/)
+- WhatsApp: [Message me](https://wa.me/923189150911)
 
----
-
-© 2025 Muneeb Ur Rehman. All rights reserved.
+© Muneeb Ur Rehman
