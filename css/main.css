@@ -325,3 +325,63 @@ a:focus-visible,button:focus-visible{outline:3px solid #E64833;outline-offset:4p
 @media(prefers-reduced-motion:reduce){
   .js-reveal{opacity:1;transform:none}
 }
+
+
+/* Work section contrast fix: warm background with readable slate text. */
+.work{
+  background:linear-gradient(
+    180deg,
+    rgba(144,174,173,.12) 0%,
+    rgba(251,233,208,.98) 10%,
+    #FBE9D0 90%,
+    rgba(144,174,173,.12) 100%
+  );
+  color:#244855;
+}
+.work .section-label,
+.work .project-meta,
+.work .work-outro>span{
+  color:#526F72;
+}
+.work h2,
+.work .project-title-row h3{
+  color:#244855;
+}
+.work h2 em{
+  color:#E64833;
+  -webkit-text-fill-color:#E64833;
+}
+.work .work-heading>p,
+.work .project-card>p{
+  color:#405F65;
+}
+.work .filter{
+  color:#405F65;
+  border-color:rgba(36,72,85,.28);
+}
+.work .filter:hover{
+  color:#244855;
+  background:rgba(144,174,173,.22);
+  border-color:#90AEAD;
+}
+.work .filter.is-active{
+  color:#FBE9D0;
+  background:#244855;
+  border-color:#244855;
+}
+.work .filter span{color:#E64833}
+.work .project-tags span{
+  color:#405F65;
+  background:rgba(144,174,173,.2);
+  border-color:rgba(36,72,85,.17);
+}
+.work .project-live,
+.work .work-outro>a{color:#874F41}
+.work .project-title-row>a{
+  color:#E64833;
+  border-color:rgba(36,72,85,.25);
+}
+.work .project-title-row>a:hover{
+  background:#E64833;
+  color:#FBE9D0;
+}
