@@ -385,3 +385,154 @@ a:focus-visible,button:focus-visible{outline:3px solid #E64833;outline-offset:4p
   background:#E64833;
   color:#FBE9D0;
 }
+
+
+/* =========================================================
+   FINAL BRAND SYSTEM — Muneeb's five-colour palette
+   Deep Slate Teal · Coral · Terracotta · Sage · Warm Cream
+   ========================================================= */
+:root{
+  color-scheme:light;
+  --bg:#FBE9D0;
+  --bg-2:#90AEAD;
+  --panel:#fff3e2;
+  --panel-2:#e7d5bb;
+  --line:rgba(36,72,85,.2);
+  --text:#244855;
+  --muted:#526d70;
+  --soft:#718b89;
+  --blue:#90AEAD;
+  --violet:#E64833;
+  --pink:#874F41;
+  --cyan:#90AEAD;
+}
+body{background:#FBE9D0;color:#244855}
+body::before{
+  background:
+    radial-gradient(ellipse at 82% 8%,rgba(144,174,173,.28),transparent 36%),
+    radial-gradient(ellipse at 10% 42%,rgba(230,72,51,.08),transparent 30%),
+    linear-gradient(180deg,#FBE9D0,#f8e4c8 55%,#FBE9D0);
+}
+::selection{background:#E64833;color:#FBE9D0}
+.skip-link{background:#E64833;color:#FBE9D0}
+.site-header{background:rgba(251,233,208,.88);border-color:rgba(36,72,85,.12)}
+.site-header.is-scrolled{background:rgba(251,233,208,.97);border-color:rgba(36,72,85,.2)}
+.wordmark{color:#244855}
+.wordmark span{color:#E64833}
+.desktop-nav a{color:#526d70}
+.desktop-nav a:hover,.desktop-nav a[aria-current=location]{color:#244855}
+.header-cta{border-color:rgba(36,72,85,.35);color:#244855}
+.header-cta span{color:#E64833}
+.header-cta:hover{background:rgba(144,174,173,.2);border-color:#244855}
+.menu-toggle{border-color:rgba(36,72,85,.25)}
+.menu-toggle span{background:#244855}
+.mobile-menu{background:rgba(251,233,208,.98);border-color:rgba(36,72,85,.2);color:#244855}
+.mobile-menu a{border-color:rgba(36,72,85,.16)}
+.mobile-menu span{color:#874F41}
+.eyebrow,.section-label,.hero-footnote,.hero-scroll,.visual-label,.portrait-tag>span,.project-meta,.work-outro>span,.contact-kicker,.contact-bottom>span,.founder-kicker{color:#526d70}
+.live-dot,.hero-footnote i{background:#E64833;box-shadow:0 0 0 5px rgba(230,72,51,.12)}
+.eyebrow-index{color:#874F41}
+.hero h1 em{background:linear-gradient(105deg,#244855 0%,#E64833 58%,#874F41 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero-intro{color:#526d70}
+.button-primary{background:#244855;color:#FBE9D0;box-shadow:0 10px 30px rgba(36,72,85,.16)}
+.button-primary:hover{background:#E64833;color:#FBE9D0}
+.button-quiet{border-color:rgba(36,72,85,.25);color:#244855}
+.button-quiet:hover{border-color:#874F41;background:rgba(144,174,173,.2)}
+.hero-footnote{color:#718b89}
+.portrait-frame{border-color:rgba(36,72,85,.3);background:linear-gradient(145deg,#90AEAD,#244855);box-shadow:0 30px 100px rgba(36,72,85,.2)}
+.portrait-frame::after{background:linear-gradient(180deg,transparent 48%,rgba(36,72,85,.3))}
+.visual-orbit{border-color:rgba(135,79,65,.34)}
+.orbit-two{border-color:rgba(144,174,173,.7)}
+.portrait-tag{border-color:rgba(36,72,85,.18);background:rgba(251,233,208,.92);color:#244855;box-shadow:0 15px 40px rgba(36,72,85,.12)}
+.portrait-tag>span{color:#874F41}
+.tag-bottom b i{color:#E64833}
+.visual-cross{color:#E64833}
+.cross-two{color:#874F41}
+.hero-scroll{color:#718b89}
+.hero-scroll span{background:#E64833}
+.marquee{border-color:rgba(36,72,85,.18);background:rgba(144,174,173,.25)}
+.marquee-track span{color:#244855}
+.marquee-track i{color:#E64833}
+.section-label{color:#526d70}
+.section-label span{color:#E64833}
+.about h2 em,.work h2 em,.capabilities h2 em,.founder h2 em,.contact h2 em{color:#E64833}
+.about-lead{color:#244855}
+.about-copy p:not(.about-lead){color:#526d70}
+.inline-link{border-color:rgba(135,79,65,.5);color:#874F41}
+.about-facts{border-color:rgba(36,72,85,.2)}
+.about-facts span{color:#718b89}
+.about-facts b{color:#244855}
+.about-facts small{color:#526d70}
+.work{background:linear-gradient(180deg,rgba(144,174,173,.18),#FBE9D0 12%,#FBE9D0 88%,rgba(144,174,173,.18));color:#244855}
+.work-heading>p{color:#526d70}
+.filter{border-color:rgba(36,72,85,.25);color:#526d70}
+.filter:hover,.filter.is-active{border-color:#244855;background:#244855;color:#FBE9D0}
+.filter span{color:#E64833}
+.project-visual{border-color:rgba(36,72,85,.16);background:#90AEAD}
+.visual-health,.visual-pneumonia,.visual-face,.visual-fluentio{background:linear-gradient(135deg,#90AEAD,#244855)}
+.visual-health img{background:linear-gradient(135deg,#90AEAD,#FBE9D0)}
+.visual-pneumonia img{background:linear-gradient(135deg,#244855,#90AEAD)}
+.visual-face img{background:linear-gradient(135deg,#90AEAD,#244855)}
+.visual-label{background:rgba(36,72,85,.86);border-color:rgba(251,233,208,.35);color:#FBE9D0}
+.visual-arrow{background:#E64833;color:#FBE9D0}
+.project-meta{color:#718b89}
+.project-title-row h3{color:#244855}
+.project-title-row h3 span{color:#E64833}
+.project-title-row>a{border-color:rgba(36,72,85,.25);color:#874F41}
+.project-title-row>a:hover{background:#E64833;color:#FBE9D0}
+.project-card>p{color:#526d70}
+.project-tags span{border-color:rgba(36,72,85,.18);background:rgba(144,174,173,.17);color:#405f65}
+.project-live,.work-outro>a{border-color:rgba(135,79,65,.45);color:#874F41}
+.visual-recognition{background:radial-gradient(ellipse at 50% 50%,#90AEAD 0,#244855 100%)}
+.recognition-art{border-color:rgba(251,233,208,.4);background:linear-gradient(145deg,rgba(251,233,208,.12),rgba(230,72,51,.08))}
+.scan-grid{background-image:linear-gradient(rgba(251,233,208,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(251,233,208,.13) 1px,transparent 1px)}
+.scan-face{border-color:#FBE9D0;background:linear-gradient(145deg,rgba(251,233,208,.2),rgba(230,72,51,.12));box-shadow:0 0 50px rgba(251,233,208,.12)}
+.scan-face::before{background:#E64833;box-shadow:30px 0 #E64833}
+.scan-face::after{border-color:#FBE9D0}
+.scan-face i{border-color:rgba(251,233,208,.35)}
+.recognition-art>b,.recognition-art>small{color:#FBE9D0}
+.recognition-art>small{color:#90AEAD}
+.scan-corner{border-color:#E64833}
+.visual-fluentio-ai{background:radial-gradient(circle at 80% 20%,rgba(230,72,51,.2),transparent 34%),linear-gradient(135deg,#244855,#90AEAD)}
+.ai-app{border-color:rgba(251,233,208,.35);background:rgba(36,72,85,.95);color:#FBE9D0}
+.ai-app-top{border-color:rgba(251,233,208,.16);color:#FBE9D0}
+.ai-app-top b,.ai-lesson span{color:#E64833}
+.ai-app-top i{color:#90AEAD}
+.ai-app-content>small,.ai-app-content>p{color:#c4d4ca}
+.ai-lesson{border-color:rgba(251,233,208,.18);color:#FBE9D0}
+.ai-lesson i{color:#90AEAD}
+.visual-portfolio{background:radial-gradient(circle at 70% 30%,rgba(230,72,51,.2),transparent 32%),linear-gradient(135deg,#90AEAD,#244855)}
+.portfolio-art{border-color:rgba(251,233,208,.4);background:linear-gradient(135deg,rgba(251,233,208,.16),rgba(230,72,51,.1));box-shadow:18px 18px 0 rgba(36,72,85,.25);color:#FBE9D0}
+.portfolio-art>span,.portfolio-art>small{color:#FBE9D0}
+.portfolio-art em{color:#E64833}
+.portfolio-lines i{background:#FBE9D0}
+.portfolio-lines i:nth-child(2){background:#E64833}
+.portfolio-lines i:nth-child(3){background:#90AEAD}
+.work-outro{border-color:rgba(36,72,85,.2)}
+.work-outro>span{color:#718b89}
+.capabilities-head>p{color:#526d70}
+.capability-list,.capability{border-color:rgba(36,72,85,.2)}
+.capability:hover{background:linear-gradient(90deg,rgba(144,174,173,.22),transparent)}
+.capability>span{color:#E64833}
+.capability h3{color:#244855}
+.capability p{color:#526d70}
+.capability>b{color:#874F41}
+.founder{border-color:rgba(36,72,85,.2)}
+.founder-art{background:linear-gradient(145deg,#90AEAD,#244855);color:#FBE9D0}
+.founder-orb{border-color:rgba(251,233,208,.35)}
+.founder-monogram span{color:#E64833}
+.founder-caption{background:rgba(251,233,208,.92);color:#244855}
+.founder-caption>span{color:#874F41}
+.founder-copy>p:not(.founder-kicker){color:#526d70}
+.text-link{color:#874F41}
+.contact{border-top-color:rgba(36,72,85,.2)}
+.contact-copy{color:#526d70}
+.contact-email{color:#244855;border-color:rgba(36,72,85,.25)}
+.contact-email span{color:#E64833}
+.contact-bottom{border-color:rgba(36,72,85,.2)}
+.social-links a{color:#874F41}
+.site-footer{border-color:rgba(36,72,85,.2);color:#526d70}
+.site-footer .wordmark{color:#244855}
+@media(prefers-reduced-motion:no-preference){
+  .button-primary{transition:transform .3s var(--ease),background .3s,color .3s}
+}
