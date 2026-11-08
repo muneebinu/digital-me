@@ -52,7 +52,7 @@ if (ctx) {
     ctx.clearRect(0, 0, W, H);
     for (const p of points) { ctx.fillStyle = p.c < 0 ? '#8FA3AD' : COLORS[p.c]; ctx.beginPath(); ctx.arc(p.x, p.y, 4, 0, 6.2832); ctx.fill(); }
     cents.forEach((c, i) => {
-      ctx.lineWidth = 3; ctx.strokeStyle = '#0D1210'; ctx.fillStyle = COLORS[i];
+      ctx.lineWidth = 3; ctx.strokeStyle = '#0B221B'; ctx.fillStyle = COLORS[i];
       ctx.beginPath(); ctx.rect(c.x - 8, c.y - 8, 16, 16); ctx.fill(); ctx.stroke();
     });
   }
@@ -86,3 +86,13 @@ if (ctx) {
   new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(canvas);
   reset();
 }
+
+// Flashcards: tap or press to flip between German and English
+document.querySelectorAll('.card').forEach(c => c.addEventListener('click', () => c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') !== 'true')));
+
+// German level selector
+const lv = { a1: 'A1: first conversations, everyday phrases and the basics of German grammar.', a2: 'A2: describing your day, asking for things and handling common situations. This is the level I teach.', b1: 'B1: speaking and writing with more independence, and preparing for the Goethe-Zertifikat B1 exam.' };
+document.querySelectorAll('.steps button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.steps button').forEach(x => x.setAttribute('aria-selected', x === b));
+  document.getElementById('lv').textContent = lv[b.dataset.lv];
+}));
