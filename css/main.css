@@ -346,3 +346,8 @@ main>section{position:relative}
  .ticker-track{animation:none}
  .js-reveal{opacity:1;transform:none;transition:none}
 }
+
+.ticker.is-paused .ticker-track{animation-play-state:paused}
+.bar nav a[aria-current="location"]{color:var(--chalk);position:relative}
+.bar nav a[aria-current="location"]::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:2px;background:var(--yellow)}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
