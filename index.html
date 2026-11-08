@@ -1,340 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Muneeb Ur Rehman - AI & ML Developer Portfolio">
-  <meta property="og:title" content="Muneeb Ur Rehman - AI & ML Developer">
-  <meta property="og:description" content="BS Computer Science student specializing in Machine Learning and Deep Learning. Affordable FYP help for Pakistani students!">
-  <meta property="og:image" content="assets/muneeb.jpg">
-  <title>Muneeb Ur Rehman — AI & ML Developer</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muneeb Ur Rehman | Machine Learning Developer in Swat, Pakistan</title>
+<meta name="description" content="Muneeb Ur Rehman is a BS Computer Science graduate building computer vision and prediction systems with PyTorch, TensorFlow, OpenCV and XGBoost. See projects and get in touch.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://muneebinu.github.io/digital-me/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muneeb Ur Rehman | Machine Learning Developer">
+<meta property="og:description" content="Computer vision and prediction projects, plus project help for students.">
+<meta property="og:url" content="https://muneebinu.github.io/digital-me/">
+<meta property="og:image" content="https://muneebinu.github.io/digital-me/assets/muneeb.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Muneeb Ur Rehman | Machine Learning Developer">
+<meta name="twitter:description" content="Computer vision and prediction projects, plus project help for students.">
+<meta name="twitter:image" content="https://muneebinu.github.io/digital-me/assets/muneeb.jpg">
+<meta name="theme-color" content="#F2F4F3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F5C4D'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23fff'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://muneebinu.github.io/digital-me/#site","url":"https://muneebinu.github.io/digital-me/","name":"Muneeb Ur Rehman","inLanguage":"en"},
+{"@type":"ProfilePage","url":"https://muneebinu.github.io/digital-me/","mainEntity":{"@id":"https://muneebinu.github.io/digital-me/#person"}},
+{"@type":"Person","@id":"https://muneebinu.github.io/digital-me/#person","name":"Muneeb Ur Rehman","jobTitle":"Machine learning developer","url":"https://muneebinu.github.io/digital-me/","image":"https://muneebinu.github.io/digital-me/assets/muneeb.jpg","address":{"@type":"PostalAddress","addressRegion":"Khyber Pakhtunkhwa","addressCountry":"PK"},"knowsAbout":["Machine learning","Deep learning","Computer vision","Prompt engineering"],"sameAs":["https://github.com/muneebinu","https://www.linkedin.com/in/muneeb-ur-rehman-043624352/"]}
+]}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursor-follower"></div>
-
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="logo">MUR<span class="dot">.</span></div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="nav-item">Home</a></li>
-      <li><a href="#skills" class="nav-item">Skills</a></li>
-      <li><a href="#projects" class="nav-item">Projects</a></li>
-      <li><a href="#services" class="nav-item">Services</a></li>
-      <li><a href="#contact" class="nav-item">Contact</a></li>
-    </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <span class="toggle-icon">◐</span>
-    </button>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Muneeb Ur Rehman, home">Muneeb Ur Rehman</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a class="btn btn-small" href="#contact">Contact</a>
   </nav>
+</header>
 
-  <!-- Home Section -->
-  <section id="home" class="section hero-section">
-    <div class="hero-bg">
-      <div class="grid-lines"></div>
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-text">
+    <h1>Machine learning that works outside the notebook</h1>
+    <p class="lead">I'm Muneeb Ur Rehman. I build computer vision and prediction systems with PyTorch, TensorFlow, OpenCV and XGBoost, and wrap them in Flask apps people can actually use.</p>
+    <div class="actions">
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn btn-ghost" href="#contact">Contact me</a>
     </div>
-    <div class="hero-content">
-      <div class="hero-tag">
-        <span class="tag-dot"></span>
-        Available for projects
-      </div>
-      <div class="profile-wrap">
-        <img src="assets/muneeb.jpg" alt="Muneeb Ur Rehman" class="profile-pic">
-        <div class="profile-ring"></div>
-      </div>
-      <h1 class="hero-title">
-        <span class="line-1">Muneeb</span>
-        <span class="line-2">Ur Rehman</span>
-      </h1>
-      <p class="hero-subtitle"><span class="typed" id="typed"></span></p>
-      <p class="hero-desc">Building intelligent systems & helping Pakistani students craft remarkable Final Year Projects.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Work</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Dedication</span></div>
-      </div>
+  </div>
+  <img class="portrait" src="assets/muneeb.jpg" alt="Portrait of Muneeb Ur Rehman" width="480" height="600" fetchpriority="high">
+</section>
+
+<section id="projects" class="projects" aria-labelledby="projects-h">
+  <h2 id="projects-h">Selected projects</h2>
+
+  <article class="feature">
+    <a class="shot" href="https://github.com/muneebinu/-Pnemunia-Detection-" target="_blank" rel="noopener"><img src="assets/Pnemunia.png" alt="Pneumonia detection project interface" loading="lazy" width="900" height="560"></a>
+    <div>
+      <h3>Pneumonia detection from chest X-rays</h3>
+      <p>A convolutional neural network that classifies chest X-ray images as pneumonia or normal.</p>
+      <p class="meta">Deep learning, CNN</p>
+      <a class="link" href="https://github.com/muneebinu/-Pnemunia-Detection-" target="_blank" rel="noopener">View on GitHub</a>
     </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+  </article>
+
+  <article class="row">
+    <a class="shot" href="https://github.com/muneebinu/HealthPredictorXGB" target="_blank" rel="noopener"><img src="assets/disese.png" alt="Disease prediction app screenshot" loading="lazy" width="900" height="560"></a>
+    <div>
+      <h3>Disease prediction from symptoms</h3>
+      <p>An XGBoost model behind a Flask interface: enter symptoms, get a predicted condition.</p>
+      <p class="meta">XGBoost, Flask</p>
+      <a class="link" href="https://github.com/muneebinu/HealthPredictorXGB" target="_blank" rel="noopener">View on GitHub</a>
     </div>
-  </section>
+  </article>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <h2 class="section-title">Skills</h2>
+  <article class="row flip">
+    <a class="shot" href="https://github.com/muneebinu/Face-detection-model" target="_blank" rel="noopener"><img src="assets/face.png" alt="Face detection attendance app screenshot" loading="lazy" width="900" height="560"></a>
+    <div>
+      <h3>Face detection attendance</h3>
+      <p>Marks attendance automatically from a camera feed, with a Flask interface for staff.</p>
+      <p class="meta">OpenCV, Flask</p>
+      <a class="link" href="https://github.com/muneebinu/Face-detection-model" target="_blank" rel="noopener">View on GitHub</a>
     </div>
-    <div class="skills-layout">
-      <div class="skills-intro">
-        <p>Specialized in machine learning pipelines, deep learning architectures, and delivering production-ready AI solutions.</p>
-      </div>
-      <div class="skills-container">
-        <div class="skill-item" data-pct="70">
-          <div class="skill-header">
-            <span class="skill-name">Python</span>
-            <span class="skill-pct">70%</span>
-          </div>
-          <div class="progress-bar"><div class="progress" style="width:0%" data-width="70%"></div></div>
-        </div>
-        <div class="skill-item" data-pct="80">
-          <div class="skill-header">
-            <span class="skill-name">Web Development</span>
-            <span class="skill-pct">80%</span>
-          </div>
-          <div class="progress-bar"><div class="progress" style="width:0%" data-width="80%"></div></div>
-        </div>
-        <div class="skill-item" data-pct="90">
-          <div class="skill-header">
-            <span class="skill-name">Fine Tuning</span>
-            <span class="skill-pct">90%</span>
-          </div>
-          <div class="progress-bar"><div class="progress" style="width:0%" data-width="90%"></div></div>
-        </div>
-        <div class="skill-item" data-pct="90">
-          <div class="skill-header">
-            <span class="skill-name">Transfer Learning</span>
-            <span class="skill-pct">90%</span>
-          </div>
-          <div class="progress-bar"><div class="progress" style="width:0%" data-width="90%"></div></div>
-        </div>
-        <div class="skill-item" data-pct="100">
-          <div class="skill-header">
-            <span class="skill-name">Prompt Engineering</span>
-            <span class="skill-pct">100%</span>
-          </div>
-          <div class="progress-bar"><div class="progress" style="width:0%" data-width="100%"></div></div>
-        </div>
-      </div>
-      <div class="tech-tags">
-        <span class="tag">PyTorch</span>
-        <span class="tag">TensorFlow</span>
-        <span class="tag">Flask</span>
-        <span class="tag">OpenCV</span>
-        <span class="tag">XGBoost</span>
-        <span class="tag">scikit-learn</span>
-        <span class="tag">NumPy</span>
-        <span class="tag">Pandas</span>
-      </div>
-    </div>
-  </section>
+  </article>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Projects</h2>
-    </div>
-    <div class="projects-grid">
+  <div class="minor">
+    <article>
+      <h3>Face recognition without a GUI</h3>
+      <p>Labels faces as welcome or unknown, built to plug into other backends.</p>
+      <p class="meta">OpenCV, Python</p>
+      <a class="link" href="https://github.com/muneebinu/Face-Detection-2" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article>
+      <h3>Fluentio Academia website</h3>
+      <p>The site for my online language academy, which teaches German and English.</p>
+      <p class="meta">HTML, CSS, JavaScript</p>
+      <a class="link" href="https://muneebinu.github.io/Fluentio-Academia/" target="_blank" rel="noopener">Visit the live site</a>
+    </article>
+    <article>
+      <h3>This portfolio</h3>
+      <p>Plain HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+      <p class="meta">HTML, CSS, JavaScript</p>
+      <a class="link" href="https://github.com/muneebinu/digital-me" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+  </div>
+</section>
 
-      <div class="project-card featured">
-        <div class="card-media">
-          <img src="assets/Pnemunia.png" alt="Pneumonia Detection" class="project-img">
-          <div class="card-overlay">
-            <a href="https://github.com/muneebinu/-Pnemunia-Detection-" target="_blank" class="overlay-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags">
-            <span>Deep Learning</span><span>PyTinker</span><span>CNN</span>
-          </div>
-          <h3>Pneumonia Detection</h3>
-          <p>Built using PyTinker to detect pneumonia from chest X-rays with high accuracy using convolutional neural networks.</p>
-        </div>
-      </div>
+<section id="skills" class="split" aria-labelledby="skills-h">
+  <h2 id="skills-h">Skills</h2>
+  <dl class="skills">
+    <div><dt>Machine learning</dt><dd>Fine-tuning, transfer learning, XGBoost, scikit-learn</dd></div>
+    <div><dt>Deep learning</dt><dd>PyTorch, TensorFlow</dd></div>
+    <div><dt>Computer vision</dt><dd>OpenCV, face detection and recognition</dd></div>
+    <div><dt>Data</dt><dd>Python, NumPy, Pandas</dd></div>
+    <div><dt>Web</dt><dd>HTML, CSS, JavaScript, Flask</dd></div>
+    <div><dt>AI tools</dt><dd>Prompt engineering</dd></div>
+  </dl>
+</section>
 
-      <div class="project-card">
-        <div class="card-media">
-          <img src="assets/disese.png" alt="Disease Prediction" class="project-img">
-          <div class="card-overlay">
-            <a href="https://github.com/muneebinu/HealthPredictorXGB" target="_blank" class="overlay-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags">
-            <span>XGBoost</span><span>Flask</span><span>ML</span>
-          </div>
-          <h3>Disease Prediction</h3>
-          <p>XGBoost-powered model with Flask GUI for predicting diseases based on symptom inputs.</p>
-        </div>
-      </div>
+<section id="about" class="split" aria-labelledby="about-h">
+  <h2 id="about-h">About</h2>
+  <div class="prose">
+    <p>I studied BS Computer Science and focus on machine learning. I'm based in Swat, Khyber Pakhtunkhwa, and I'm looking for a role where I can apply that work, including network-focused roles that aren't code-heavy.</p>
+    <p>I also run Fluentio Academia, an online language academy, and help students plan and build their final year projects.</p>
+  </div>
+</section>
 
-      <div class="project-card">
-        <div class="card-media">
-          <img src="assets/face.png" alt="Face Detection Attendance" class="project-img">
-          <div class="card-overlay">
-            <a href="https://github.com/muneebinu/Face-detection-model" target="_blank" class="overlay-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags">
-            <span>OpenCV</span><span>Flask</span><span>Computer Vision</span>
-          </div>
-          <h3>Face Detection Attendance</h3>
-          <p>Automated attendance system using face detection with a Flask-powered GUI interface.</p>
-        </div>
-      </div>
+<section id="services" class="split" aria-labelledby="services-h">
+  <h2 id="services-h">Help with your project</h2>
+  <div class="prose">
+    <p><strong>Final year projects.</strong> Scoping, model training and evaluation, and documentation for machine learning and deep learning projects.</p>
+    <p><strong>Project building.</strong> Custom models with a Flask interface, published on GitHub.</p>
+    <p><strong>Prompt engineering.</strong> Prompt design and AI workflow setup.</p>
+  </div>
+</section>
 
-      <div class="project-card no-img">
-        <div class="card-body">
-          <div class="card-tags">
-            <span>Computer Vision</span><span>Python</span>
-          </div>
-          <h3>Face Recognition System</h3>
-          <p>Welcome/Unknown face recognition system without GUI for seamless backend integration.</p>
-          <a href="https://github.com/muneebinu/Face-Detection-2" target="_blank" class="card-link">
-            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
+<section id="contact" class="contact" aria-labelledby="contact-h">
+  <h2 id="contact-h">Let's talk about your project or role</h2>
+  <ul class="contact-list">
+    <li><a href="https://wa.me/923189150911?text=Hello%20Muneeb%2C%20I%20found%20your%20portfolio." target="_blank" rel="noopener">WhatsApp +92 318 9150911</a></li>
+    <li><a href="mailto:malakmuneeb9@gmail.com">malakmuneeb9@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/muneeb-ur-rehman-043624352/" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/muneebinu" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+</section>
+</main>
 
-      <div class="project-card">
-        <div class="card-media">
-          <img src="assets/webs.png" alt="Portfolio Website" class="project-img">
-          <div class="card-overlay">
-            <a href="https://github.com/muneebinu/digital-me" target="_blank" class="overlay-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags">
-            <span>HTML/CSS</span><span>JavaScript</span><span>AOS</span>
-          </div>
-          <h3>Portfolio Website</h3>
-          <p>My personal portfolio website showcasing projects, skills and services.</p>
-        </div>
-      </div>
+<footer class="site-footer"><p>&copy; 2026 Muneeb Ur Rehman</p></footer>
 
-      <div class="project-card fluentio-card">
-        <div class="card-media fluentio-media">
-          <div class="fluentio-preview">
-            <div class="fp-nav">Fluentio Academia</div>
-            <div class="fp-hero">🎓 Master English &amp; German</div>
-            <div class="fp-tags"><span>Spoken English</span><span>German A2</span></div>
-          </div>
-          <div class="card-overlay">
-            <a href="https://muneebinu.github.io/Fluentio-Academia/" target="_blank" class="overlay-link">
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="card-tags">
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Ed-Tech</span>
-          </div>
-          <h3>Fluentio Academia 🎓</h3>
-          <p>A high-performance web platform for a language learning startup, featuring Spoken English and German A2 courses with glassmorphism design and scroll-reveal animations.</p>
-          <a href="https://muneebinu.github.io/Fluentio-Academia/" target="_blank" class="card-link live-link">
-            <i class="fas fa-external-link-alt"></i> View Live Site <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Services</h2>
-    </div>
-    <p class="services-sub">Affordable, quality help for Pakistani students — from concept to completion.</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
-        <h3>FYP Assistance</h3>
-        <p>End-to-end guidance for Machine Learning & Deep Learning final year projects at student-friendly rates.</p>
-        <ul class="service-list">
-          <li>Project scoping &amp; planning</li>
-          <li>Model training &amp; evaluation</li>
-          <li>Documentation support</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-code"></i></div>
-        <h3>Project Building</h3>
-        <p>From idea to deployment — building ML/AI projects that stand out and impress supervisors.</p>
-        <ul class="service-list">
-          <li>Custom ML model development</li>
-          <li>Flask/web GUI integration</li>
-          <li>GitHub deployment</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-magic"></i></div>
-        <h3>Prompt Engineering</h3>
-        <p>Crafting optimized prompts for AI tools to boost efficiency and get production-quality outputs.</p>
-        <ul class="service-list">
-          <li>LLM prompt optimization</li>
-          <li>AI workflow design</li>
-          <li>Tool selection guidance</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="section-header">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Contact</h2>
-    </div>
-    <div class="contact-layout">
-      <div class="contact-left">
-        <p class="contact-heading">Let's build something <span class="accent">remarkable</span> together.</p>
-        <p class="contact-sub">Reach out for quick responses, project help, or FYP consultation.</p>
-        <p class="contact-location"><i class="fas fa-map-marker-alt"></i> Swat, Khyber Pakhtunkhwa, Pakistan</p>
-      </div>
-      <div class="contact-right">
-        <a href="https://wa.me/+923189150911" target="_blank" class="contact-card">
-          <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
-          <div class="contact-card-info">
-            <span class="contact-card-label">WhatsApp</span>
-            <span class="contact-card-value">+92 318 9150911</span>
-          </div>
-          <i class="fas fa-arrow-right contact-arrow"></i>
-        </a>
-        <a href="https://github.com/muneebinu" target="_blank" class="contact-card">
-          <div class="contact-card-icon"><i class="fab fa-github"></i></div>
-          <div class="contact-card-info">
-            <span class="contact-card-label">GitHub</span>
-            <span class="contact-card-value">github.com/muneebinu</span>
-          </div>
-          <i class="fas fa-arrow-right contact-arrow"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="footer-logo">MUR<span class="dot">.</span></span>
-      <p>© 2025 Muneeb Ur Rehman. All rights reserved.</p>
-      <p class="footer-note">Built with passion from Pakistan 🇵🇰</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+<a class="wa" href="https://wa.me/923189150911?text=Hello%20Muneeb%2C%20I%20found%20your%20portfolio." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3Zm0 23.7a10.700 10.700 0 0 1-5.500-1.500l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.700 10.700 0 1 1 16 26.700Zm5.900-8c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7 0a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.400 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2 .8 2.800.9 3.800.7a3.200 3.200 0 0 0 2.100-1.500 2.600 2.600 0 0 0 .2-1.500c-.1-.1-.3-.2-.6-.4Z"/></svg>
+</a>
+<script src="js/script.js" defer></script>
 </body>
 </html>
