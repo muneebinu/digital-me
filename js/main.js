@@ -96,3 +96,46 @@ document.querySelectorAll('.steps button').forEach(b => b.addEventListener('clic
   document.querySelectorAll('.steps button').forEach(x => x.setAttribute('aria-selected', x === b));
   document.getElementById('lv').textContent = lv[b.dataset.lv];
 }));
+
+
+// Scroll reveals: keep content visible when motion is reduced or IO is unavailable.
+const revealTargets = document.querySelectorAll('.about-heading,.about-body,.about-meta,.flu-copy,.browser,.german,.proj,.gloss div,.lab-copy,.lab-demo,.contact h2,.contact-note,.contact .mail');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion && 'IntersectionObserver' in window) {
+  revealTargets.forEach(el => el.classList.add('js-reveal'));
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+  revealTargets.forEach(el => revealObserver.observe(el));
+}
+
+// Highlight the current section in the sticky navigation.
+const navLinks = [...document.querySelectorAll('.bar nav a[href^="#"]')];
+const navSections = navLinks
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+if ('IntersectionObserver' in window) {
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(link => {
+        const active = link.getAttribute('href') === '#' + entry.target.id;
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-35% 0px -55% 0px' });
+  navSections.forEach(section => sectionObserver.observe(section));
+}
+
+// Pause the moving type strip when a visitor hovers it or asks to reduce motion.
+const ticker = document.querySelector('.ticker');
+if (ticker) {
+  ticker.addEventListener('pointerenter', () => ticker.classList.add('is-paused'));
+  ticker.addEventListener('pointerleave', () => ticker.classList.remove('is-paused'));
+}
