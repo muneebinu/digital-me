@@ -298,3 +298,13 @@ h1, h2, h3, p, a, span, small, b {
   :root { --pad: clamp(6rem, 8vw, 8rem); }
   .hero { gap: 6rem; }
 }
+
+
+/* Full-bleed section backgrounds with the original 1440px content measure. */
+.section-shell {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-left: max(var(--pad), calc((100vw - var(--max)) / 2 + var(--pad)));
+  padding-right: max(var(--pad), calc((100vw - var(--max)) / 2 + var(--pad)));
+}
