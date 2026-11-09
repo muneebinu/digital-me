@@ -349,3 +349,74 @@ main {
 body {
   overflow-x: clip;
 }
+
+/* Mobile viewport containment: keep decorative hero artwork inside the
+   actual phone viewport instead of allowing the rotated orbit rings to
+   create a phantom strip/overflow at the right edge. */
+@media (max-width: 760px) {
+  html,
+  body,
+  main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .section-shell {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+    padding-inline: var(--pad);
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+    max-width: 34rem;
+    overflow: clip;
+    contain: paint;
+  }
+
+  .visual-orbit {
+    max-width: 100%;
+  }
+
+  .orbit-one {
+    width: 100%;
+    height: 64%;
+  }
+
+  .orbit-two {
+    width: 100%;
+    height: 78%;
+    transform: rotate(20deg);
+  }
+
+  .marquee {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-grid,
+  .project-card,
+  .project-visual {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-visual {
+    min-height: 320px;
+  }
+
+  .visual-orbit {
+    border-width: 1px;
+  }
+}
