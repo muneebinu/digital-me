@@ -84,3 +84,217 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-size:clamp(4.5rem,8.6vw,9.2rem);font-weigh
 @media(max-width:760px){.site-header{height:74px}.desktop-nav,.header-cta{display:none}.menu-toggle{display:block}.mobile-menu{top:74px}.hero{min-height:auto;grid-template-columns:1fr;padding-top:5rem;padding-bottom:6rem;gap:1rem}.hero h1{font-size:clamp(4.2rem,15vw,7rem)}.hero-visual{min-height:440px;margin-top:1rem}.portrait-frame{width:min(68%,330px)}.tag-top{left:5%;top:8%}.tag-bottom{right:3%;bottom:7%}.hero-scroll{bottom:2rem}.about-grid,.work-heading,.capabilities-head,.founder{grid-template-columns:1fr;gap:2rem}.about-grid{gap:2.5rem}.about h2,.work h2,.capabilities h2{font-size:clamp(3.5rem,11vw,5.5rem)}.about-facts{grid-template-columns:1fr 1fr}.about-facts div:last-child{grid-column:1/-1}.work-heading{margin-bottom:2.5rem}.work-heading>p{max-width:560px}.founder-art{min-height:340px;order:2}.founder-copy{order:1}.capabilities-head{gap:1.5rem}.capability{grid-template-columns:35px 1fr 50px;gap:13px;padding:21px 0}.capability p{grid-column:2/3;grid-row:2}.capability>b{grid-column:3;grid-row:1}.contact-bottom{align-items:flex-start;flex-direction:column}.site-footer{flex-wrap:wrap}.site-footer>span:nth-child(2){order:3;width:100%}}
 @media(max-width:540px){:root{--pad:1.15rem}.hero{padding-top:4rem}.eyebrow{font-size:.54rem;letter-spacing:.1em;flex-wrap:wrap;margin-bottom:1.7rem}.hero-intro{font-size:1rem}.hero-actions{gap:9px}.button{min-height:48px;padding:0 16px;font-size:.78rem;gap:12px}.hero-visual{min-height:390px}.portrait-frame{width:72%}.portrait-tag{padding:12px}.tag-top b{font-size:1.2rem}.tag-bottom b{font-size:.72rem}.hero-footnote{font-size:.52rem;gap:12px}.about,.work,.capabilities{padding-top:5rem;padding-bottom:5rem}.about h2,.work h2,.capabilities h2{font-size:clamp(3.1rem,13vw,4.5rem)}.about-facts{gap:18px 12px}.about-facts b{font-size:.88rem}.about-facts small{font-size:.7rem}.project-grid{grid-template-columns:1fr;gap:2.7rem}.project-visual{aspect-ratio:1.38}.project-meta{font-size:.5rem}.project-title-row h3{font-size:1.45rem}.project-card>p{font-size:.86rem}.filter-row{gap:7px}.filter{min-height:35px;padding:0 11px;font-size:.69rem}.founder-art{min-height:290px}.founder h2{font-size:clamp(2.9rem,12vw,4.2rem)}.founder-links{gap:15px}.contact h2{font-size:clamp(3.7rem,14vw,6rem)}.contact-email{font-size:clamp(1.05rem,5vw,1.5rem)}.contact-bottom>span{font-size:.5rem}.work-outro{align-items:flex-start;flex-direction:column}.site-footer{font-size:.64rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js-reveal{opacity:1;transform:none}.marquee-track{animation:none}}
+
+
+/* Responsive layout pass: laptop, tablet and small-screen proportions. */
+.section-shell,
+.site-header,
+.site-footer,
+.project-card,
+.project-visual,
+.hero-copy,
+.hero-visual,
+.about-grid > *,
+.work-heading > *,
+.capabilities-head > *,
+.founder > * {
+  min-width: 0;
+}
+img,
+iframe {
+  max-width: 100%;
+}
+h1, h2, h3, p, a, span, small, b {
+  overflow-wrap: break-word;
+}
+.project-card > p,
+.about-copy,
+.founder-copy,
+.contact-copy {
+  overflow-wrap: anywhere;
+}
+.project-meta {
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+.project-title-row h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.contact-email {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.site-footer > span {
+  min-width: 0;
+}
+
+/* Standard laptop and compact desktop widths. */
+@media (min-width: 1001px) and (max-width: 1280px) {
+  :root { --pad: clamp(2rem, 4.2vw, 3.6rem); }
+  .hero {
+    grid-template-columns: minmax(0, 1.05fr) minmax(330px, .95fr);
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
+  .hero h1 { font-size: clamp(4.4rem, 7.2vw, 6.6rem); }
+  .hero-visual { min-height: clamp(440px, 43vw, 540px); }
+  .portrait-frame { width: min(76%, 390px); }
+  .tag-top { left: 0; }
+  .tag-bottom { right: 0; }
+  .work-heading { gap: clamp(2rem, 4vw, 3.5rem); }
+  .project-grid { column-gap: clamp(1.2rem, 2.4vw, 2rem); }
+  .capability { gap: 18px; }
+  .founder { gap: clamp(2.5rem, 5vw, 4.5rem); }
+}
+
+/* Tablet and narrow laptop widths. */
+@media (min-width: 761px) and (max-width: 1000px) {
+  :root { --pad: clamp(1.5rem, 4vw, 2.5rem); }
+  .site-header { height: 78px; }
+  .hero {
+    min-height: auto;
+    grid-template-columns: minmax(0, 1.08fr) minmax(280px, .92fr);
+    gap: 1.25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 6.5rem;
+  }
+  .hero h1 { font-size: clamp(3.8rem, 7.1vw, 5.6rem); }
+  .hero-intro { font-size: 1rem; }
+  .hero-actions { gap: 9px; }
+  .button { gap: 13px; padding-inline: 17px; }
+  .hero-visual { min-height: 420px; }
+  .portrait-frame { width: 78%; }
+  .tag-top { left: -1%; top: 10%; }
+  .tag-bottom { right: -1%; bottom: 9%; }
+  .portrait-tag { padding: 12px 13px; }
+  .tag-top b { font-size: 1.25rem; }
+  .tag-bottom b { font-size: .72rem; }
+  .hero-scroll { bottom: 2rem; }
+  .about-grid { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: 2.5rem; }
+  .about h2, .work h2, .capabilities h2, .founder h2, .contact h2 {
+    font-size: clamp(3rem, 6vw, 4.7rem);
+  }
+  .work-heading { grid-template-columns: minmax(0, 1fr) minmax(240px, .75fr); gap: 2rem; }
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem; }
+  .project-card { padding: 9px; }
+  .project-meta { font-size: .49rem; gap: 5px 9px; }
+  .project-title-row h3 { font-size: clamp(1.15rem, 2vw, 1.55rem); }
+  .project-card > p { font-size: .82rem; }
+  .project-tags { gap: 5px; }
+  .project-tags span { font-size: .59rem; padding: 5px 8px; }
+  .capabilities-head { grid-template-columns: minmax(0, 1fr) minmax(240px, .75fr); gap: 2rem; }
+  .capability {
+    grid-template-columns: 42px minmax(0, 1fr) 54px;
+    gap: 13px;
+    padding: 20px 0;
+  }
+  .capability p { grid-column: 2; grid-row: 2; }
+  .capability > b { grid-column: 3; grid-row: 1; }
+  .founder { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 2rem; }
+  .founder-art { min-height: 330px; }
+  .founder-caption { gap: 10px; padding: 13px; }
+  .founder-caption > span { font-size: .45rem; }
+  .founder-caption > b { font-size: 1.05rem; }
+  .contact-email { font-size: clamp(1.2rem, 2.6vw, 1.8rem); }
+}
+
+/* Phones and compact portrait tablets. */
+@media (max-width: 760px) {
+  :root { --pad: clamp(1.1rem, 5vw, 1.65rem); }
+  .site-header { height: 72px; }
+  .mobile-menu { top: 72px; }
+  .hero {
+    min-height: 0;
+    padding-top: clamp(3.5rem, 9vw, 4.8rem);
+    padding-bottom: 6rem;
+  }
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(3.45rem, 12.5vw, 5.4rem);
+    line-height: .94;
+    letter-spacing: -.075em;
+    text-wrap: balance;
+  }
+  .hero-intro { max-width: 38rem; }
+  .hero-visual {
+    width: 100%;
+    max-width: 34rem;
+    min-height: clamp(340px, 95vw, 440px);
+    margin-inline: auto;
+  }
+  .portrait-frame { width: min(68%, 310px); }
+  .tag-top { left: 3%; }
+  .tag-bottom { right: 2%; }
+  .hero-footnote { gap: 10px 18px; }
+  .hero-footnote span { max-width: 100%; }
+  .about-grid, .work-heading, .capabilities-head, .founder {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .about h2, .work h2, .capabilities h2 {
+    font-size: clamp(2.9rem, 10.5vw, 4.8rem);
+  }
+  .about-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-card { width: 100%; }
+  .project-visual { aspect-ratio: 1.5; }
+  .project-title-row h3 { font-size: clamp(1.35rem, 5vw, 1.75rem); }
+  .capability {
+    grid-template-columns: 35px minmax(0, 1fr) 48px;
+    gap: 12px;
+  }
+  .capability h3 { overflow-wrap: anywhere; }
+  .founder-art { width: 100%; min-height: clamp(280px, 78vw, 350px); }
+  .founder-copy { max-width: 100%; }
+  .contact h2 { font-size: clamp(3.1rem, 11.5vw, 5rem); }
+  .contact-email { font-size: clamp(1.05rem, 4.8vw, 1.5rem); gap: 12px; }
+  .contact-bottom { align-items: flex-start; flex-direction: column; }
+  .site-footer { align-items: flex-start; flex-wrap: wrap; }
+}
+
+/* Small phones: prevent oversized headings, buttons and metadata from clipping. */
+@media (max-width: 420px) {
+  :root { --pad: 1rem; }
+  .hero { padding-top: 3.25rem; padding-bottom: 5.5rem; }
+  .hero h1 { font-size: clamp(3.1rem, 12vw, 3.8rem); }
+  .hero-actions { align-items: stretch; flex-direction: column; max-width: 17rem; }
+  .hero-actions .button { width: 100%; justify-content: space-between; }
+  .hero-visual { min-height: 330px; }
+  .portrait-frame { width: 70%; }
+  .portrait-tag { max-width: 46%; padding: 10px; }
+  .portrait-tag > span { font-size: .43rem; letter-spacing: .1em; }
+  .tag-top b { font-size: 1.05rem; }
+  .tag-bottom b { font-size: .65rem; }
+  .hero-footnote { flex-direction: column; align-items: flex-start; font-size: .5rem; }
+  .about h2, .work h2, .capabilities h2 { font-size: clamp(2.65rem, 11vw, 3.6rem); }
+  .about-facts { gap: 16px 10px; }
+  .about-facts b { font-size: .82rem; }
+  .about-facts small { font-size: .68rem; }
+  .filter-row { gap: 7px; }
+  .filter { max-width: 100%; min-height: 36px; padding-inline: 10px; font-size: .67rem; }
+  .project-card { padding: 8px; }
+  .project-visual { aspect-ratio: 1.32; }
+  .project-meta { font-size: .46rem; }
+  .project-title-row { align-items: flex-start; }
+  .project-title-row h3 { font-size: 1.3rem; }
+  .project-card > p { font-size: .83rem; }
+  .project-tags span { font-size: .58rem; }
+  .recognition-art { width: 70%; }
+  .recognition-art > small { font-size: .38rem; }
+  .founder-caption { left: 6%; right: 6%; gap: 8px; padding: 12px; }
+  .founder-caption > span { font-size: .43rem; }
+  .founder-caption > b { font-size: 1rem; }
+  .founder h2 { font-size: clamp(2.6rem, 10.5vw, 3.7rem); }
+  .founder-links { align-items: flex-start; flex-direction: column; }
+  .contact h2 { font-size: clamp(2.85rem, 11.5vw, 3.8rem); }
+  .contact-email { font-size: clamp(.98rem, 4.5vw, 1.2rem); }
+  .contact-bottom > span { font-size: .48rem; }
+  .site-footer { gap: 12px; }
+  .site-footer > span:last-child { margin-left: auto; text-align: right; }
+}
+
+/* Wider screens should retain a deliberate reading width. */
+@media (min-width: 1600px) {
+  :root { --pad: clamp(6rem, 8vw, 8rem); }
+  .hero { gap: 6rem; }
+}
